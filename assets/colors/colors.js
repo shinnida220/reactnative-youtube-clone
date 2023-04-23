@@ -12,4 +12,5 @@ export default colors = {
 	lightRed: "#FF6565",
 	lighterRed: "#FF9797",
 	lightestRed: "#FFCACA",
+	white: "#FFFFFF",
 };
