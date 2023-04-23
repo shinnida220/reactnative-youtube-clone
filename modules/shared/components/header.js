@@ -49,23 +49,6 @@ const styles = StyleSheet.create({
 		height: 20,
 		resizeMode: "contain",
 	},
-	logoText: {
-		fontSize: 20,
-		fontWeight: "bold",
-		marginLeft: 6,
-	},
-	search: {
-		flexDirection: "row",
-		alignItems: "center",
-		backgroundColor: "#f5f5f5",
-		borderRadius: 5,
-		paddingHorizontal: 12,
-		paddingVertical: 6,
-	},
-	searchText: {
-		marginLeft: 6,
-		color: "grey",
-	},
 	rightIconsContainer: {
 		flexDirection: "row",
 		alignItems: "center",

@@ -16,11 +16,19 @@ const ChannelList = ({ channels }) => {
 	return (
 		<View style={styles.channelList}>
 			<View style={styles.channelListContainer}>
-				<ScrollView horizontal showsHorizontalScrollIndicator={false}>
+				{/* <ScrollView horizontal showsHorizontalScrollIndicator={false}>
 					{channels.map((channel) => (
 						<ChannelListItem key={channel.id} channel={channel} />
 					))}
-				</ScrollView>
+				</ScrollView> */}
+				<FlatList
+					data={channels}
+					renderItem={({ item }) => <ChannelListItem channel={item} />}
+					keyExtractor={(item) => item.id}
+					horizontal
+					showsHorizontalScrollIndicator={false}
+					contentContainerStyle={styles.channelList}
+				/>
 				<TouchableOpacity style={styles.viewAllButton}>
 					<Text style={styles.viewAllButtonText}>View all</Text>
 				</TouchableOpacity>
